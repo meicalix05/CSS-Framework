@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio con Bulma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/bulma.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong>Mi Sitio</strong>
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#home">
+                        Inicio
+                    </a>
+
+                    <a class="navbar-item" href="#products">
+                        Productos
+                    </a>
+
+                    <a class="navbar-item" href="#testimonials">
+                        Testimonios
+                    </a>
+
+                    <a class="navbar-item" href="#contactus">
+                        Contáctanos
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Registrarse</strong>
+                            </a>
+                            <a class="button is-light">
+                                Iniciar Sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Slider Section -->
+        <section id="home">
+            <div class="hero-track">
+                <section>
+                    <picture>
+                        <source srcset="https://picsum.photos/id/20/1300/720" media="(min-width:1025px)" />
+                        <source srcset="https://picsum.photos/id/20/1024/640" media="(min-width:720px)" />
+                        <img src="https://picsum.photos/id/20/480/480" alt="Hero Panel Img">
+                    </picture>
+                    <div class="cuadrant-1">
+                        <h2>Slide 1</h2>
+                        <p>Descubre nuestros productos exclusivos</p>
+                    </div>
+                </section>
+                <section>
+                    <picture>
+                        <source srcset="https://picsum.photos/id/21/1300/720" media="(min-width:1025px)" />
+                        <source srcset="https://picsum.photos/id/21/1024/640" media="(min-width:720px)" />
+                        <img src="https://picsum.photos/id/21/480/480" alt="Hero Panel Img">
+                    </picture>
+                    <div class="cuadrant-2">
+                        <h2>Slide 2</h2>
+                        <p>Calidad garantizada</p>
+                    </div>
+                </section>
+                <section>
+                    <picture>
+                        <source srcset="https://picsum.photos/id/22/1300/720" media="(min-width:1025px)" />
+                        <source srcset="https://picsum.photos/id/22/1024/640" media="(min-width:720px)" />
+                        <img src="https://picsum.photos/id/22/480/480" alt="Hero Panel Img">
+                    </picture>
+                    <div class="cuadrant-3">
+                        <h2>Slide 3</h2>
+                        <p>Envío gratis disponible</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero is-large is-info">
+            <div class="hero-body">
+                <p class="title">Bienvenido a Nuestro Sitio</p>
+                <p class="subtitle">Descubre la mejor experiencia con Bulma CSS</p>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section id="products" class="columns is-3 p-3 container">
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://picsum.photos/id/200/1280/960" alt="Producto 1">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="https://picsum.photos/id/200/96/96" alt="Producto 1">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Producto Premium</p>
+                                <p class="subtitle is-6">$99.99</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                            iaculis mauris. <a>@productos</a>. <a href="#">#calidad</a>
+                            <a href="#">#premium</a>
+                            <br />
+                            <time datetime="2024-1-1">11:09 PM - 1 Ene 2024</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://picsum.photos/id/201/1280/960" alt="Producto 2">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="https://picsum.photos/id/201/96/96" alt="Producto 2">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Producto Estándar</p>
+                                <p class="subtitle is-6">$49.99</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                            iaculis mauris. <a>@productos</a>. <a href="#">#estándar</a>
+                            <a href="#">#valor</a>
+                            <br />
+                            <time datetime="2024-1-1">11:09 PM - 1 Ene 2024</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://picsum.photos/id/202/1280/960" alt="Producto 3">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="https://picsum.photos/id/202/96/96" alt="Producto 3">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Producto Básico</p>
+                                <p class="subtitle is-6">$29.99</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                            iaculis mauris. <a>@productos</a>. <a href="#">#básico</a>
+                            <a href="#">#económico</a>
+                            <br />
+                            <time datetime="2024-1-1">11:09 PM - 1 Ene 2024</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contactus" class="my-3 has-background-info columns is-vcentered is-gapless">
+            <div class="column">
+                <picture>
+                    <source srcset="https://picsum.photos/id/187/720/720" media="(min-width:1024px)" />
+                    <img src="https://picsum.photos/id/187/480/480" alt="Panel Doble" class="image is-fullwidth"
+                        style="object-fit:cover" />
+                </picture>
+            </div>
+            <div class="column has-background-primary-95">
+                <div class="p-5">
+                    <h3 class="title is-3">Contáctanos</h3>
+                    <div class="field">
+                        <label class="label">Nombre</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Tu nombre">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-success" type="email" placeholder="Tu email" value="">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                        <p class="help is-success">Email válido</p>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Asunto</label>
+                        <div class="control">
+                            <div class="select">
+                                <select>
+                                    <option>Consulta general</option>
+                                    <option>Soporte técnico</option>
+                                    <option>Ventas</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Mensaje</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Tu mensaje"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Acepto los <a href="#">términos y condiciones</a>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link">Enviar</button>
+                        </div>
+                        <div class="control">
+                            <button class="button is-link is-light">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-centered">Testimonios</h2>
+                <div class="columns is-multiline">
+                    <div class="column is-6">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>María González</strong>
+                                            <br>
+                                            "Los productos son excepcionales. La calidad superó mis expectativas y el servicio al cliente fue increíble."
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Carlos Rodríguez</strong>
+                                            <br>
+                                            "Entrega rápida y productos de primera calidad. Definitivamente volveré a comprar. Muy recomendado."
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Mi Sitio Web</strong> &copy; 2024. Todos los derechos reservados.
+            </p>
+            <p>
+                Creado con <a href="https://bulma.io">Bulma</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/carousel.js"></script>
+</body>
+</html>
