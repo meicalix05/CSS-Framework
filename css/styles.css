@@ -26,4 +26,36 @@ main {
     flex:1;
 }
 
-/* ... y todo el resto de tu CSS personalizado que me pasaste */
+navbar.is-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.hero.is-info {
+    background-color: var(--primary-dark-color) !important;
+}
+
+.button.is-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-text-color);
+}
+
+.button.is-primary:hover {
+    background-color: var(--primary-dark-color);
+    border-color: var(--primary-dark-color);
+    color: var(--primary-text-color);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+}
+
+.has-background-info {
+    background-color: var(--primary-lite-color) !important;
+}
+
+.has-background-primary-95 {
+    background-color: var(--primary-lite-color) !important;
+}
+
