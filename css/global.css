@@ -1,7 +1,171 @@
 :root {
-    --primary-color: #F8C8DC;  
-    --primary-dark-color: #E75480;  
-    --primary-lite-color: #FFE4E6;  
-    --primary-text-color: #fff;
-    --secondary-text-color: #333;
+    --primary-color: #ff6b93;
+    --secondary-color: #6b5fff;
+    --accent-color: #ffcc5c;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #ff6b93 0%, #6b5fff 100%);
+    color: white;
+    padding: 4rem 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1.5rem;
+    height: 100%;
+    transition: transform 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.brands-section {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+.brand-card {
+    transition: transform 0.3s;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.brand-card:hover {
+    transform: scale(1.05);
+}
+
+.offer-card {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transition: all 0.3s;
+    padding: 2rem;
+    text-align: center;
+}
+
+.offer-card:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.shipping-banner {
+    background-color: var(--accent-color);
+    color: #333;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 1001;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.navbar-item:hover {
+    background-color: transparent !important;
+    color: var(--primary-color) !important;
+}
+
+.section-title {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.product-category {
+    transition: transform 0.3s;
+    cursor: pointer;
+    height: 100%;
+}
+
+.product-category:hover {
+    transform: translateY(-5px);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 1.5rem;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.has-background-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.has-text-primary {
+    color: var(--primary-color) !important;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.feature-card:last-child {
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+    
+    .feature-card {
+        margin-bottom: 1rem;
+        min-height: auto;
+    }
+    
+    .brand-card {
+        margin-bottom: 1rem;
+    }
+    
+    .fixed-nav {
+        position: static;
+    }
+    
+    section {
+        scroll-margin-top: 0;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
